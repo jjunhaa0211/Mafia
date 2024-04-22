@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E1F72712BD36525008BA3A7 /* SelectCollectioniViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F72702BD36525008BA3A7 /* SelectCollectioniViewCell.swift */; };
+		0E1F72732BD365D9008BA3A7 /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F72722BD365D9008BA3A7 /* UIViewController+Util.swift */; };
+		0E1F72772BD36D2F008BA3A7 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F72762BD36D2F008BA3A7 /* UITextField+Padding.swift */; };
+		0E48885E2BCEBD4900E70748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48885D2BCEBD4900E70748 /* AppDelegate.swift */; };
+		0E4888602BCEBD4900E70748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48885F2BCEBD4900E70748 /* SceneDelegate.swift */; };
+		0E4888622BCEBD4900E70748 /* MafiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888612BCEBD4900E70748 /* MafiaViewController.swift */; };
+		0E4888652BCEBD4900E70748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4888632BCEBD4900E70748 /* Main.storyboard */; };
+		0E4888682BCEBD4900E70748 /* Mafia43.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888662BCEBD4900E70748 /* Mafia43.xcdatamodeld */; };
+		0E48886A2BCEBD4A00E70748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4888692BCEBD4A00E70748 /* Assets.xcassets */; };
+		0E48886D2BCEBD4A00E70748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E48886B2BCEBD4A00E70748 /* LaunchScreen.storyboard */; };
+		0E4888782BCEBD4B00E70748 /* Mafia43Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888772BCEBD4B00E70748 /* Mafia43Tests.swift */; };
+		0E4888822BCEBD4B00E70748 /* Mafia43UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888812BCEBD4B00E70748 /* Mafia43UITests.swift */; };
+		0E4888842BCEBD4B00E70748 /* Mafia43UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888832BCEBD4B00E70748 /* Mafia43UITestsLaunchTests.swift */; };
+		0E4888972BCEC4E000E70748 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4888962BCEC4E000E70748 /* SocketIO */; };
+		0E4888992BCEC56400E70748 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888982BCEC56400E70748 /* SocketIOManager.swift */; };
+		0E48889F2BCEF32200E70748 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0E48889E2BCEF32200E70748 /* Then */; };
+		0E4888A22BCEF33700E70748 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4888A12BCEF33700E70748 /* SnapKit */; };
+		0E4888AD2BCEF7F200E70748 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888AC2BCEF7F200E70748 /* DateManager.swift */; };
+		0E4888B02BCEF81800E70748 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888AF2BCEF81800E70748 /* Chat.swift */; };
+		0E4888B32BCEF82F00E70748 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888B22BCEF82F00E70748 /* UITableViewCell+Extension.swift */; };
+		0E4888B62BCEF84100E70748 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888B52BCEF84100E70748 /* ReusableView.swift */; };
+		0E4888B82BCEF84B00E70748 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888B72BCEF84B00E70748 /* ViewRepresentable.swift */; };
+		0E4888BB2BCEF8A800E70748 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888BA2BCEF8A800E70748 /* ChatView.swift */; };
+		0E4888BD2BCEF8B300E70748 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888BC2BCEF8B300E70748 /* MyMessageTableViewCell.swift */; };
+		0E4888BF2BCEF8C000E70748 /* YourMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888BE2BCEF8C000E70748 /* YourMessageTableViewCell.swift */; };
+		0E4888C42BCEFE2900E70748 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4888C32BCEFE2900E70748 /* IQKeyboardManagerSwift */; };
+		0E4888D12BCF901A00E70748 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888D02BCF901A00E70748 /* EventTableViewCell.swift */; };
+		0E4888D32BCFD5EE00E70748 /* ChatFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888D22BCFD5EE00E70748 /* ChatFooterView.swift */; };
+		0E4888DE2BCFE4D200E70748 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4888DD2BCFE4D200E70748 /* SelectViewController.swift */; };
+		0E7E4C272BD5F41700FAC73C /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E4C262BD5F41700FAC73C /* BaseURL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E4888742BCEBD4B00E70748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E4888522BCEBD4900E70748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E4888592BCEBD4900E70748;
+			remoteInfo = Mafia43;
+		};
+		0E48887E2BCEBD4B00E70748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E4888522BCEBD4900E70748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E4888592BCEBD4900E70748;
+			remoteInfo = Mafia43;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E1F72702BD36525008BA3A7 /* SelectCollectioniViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCollectioniViewCell.swift; sourceTree = "<group>"; };
+		0E1F72722BD365D9008BA3A7 /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
+		0E1F72762BD36D2F008BA3A7 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		0E48885A2BCEBD4900E70748 /* Mafia43.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mafia43.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E48885D2BCEBD4900E70748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E48885F2BCEBD4900E70748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0E4888612BCEBD4900E70748 /* MafiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MafiaViewController.swift; sourceTree = "<group>"; };
+		0E4888642BCEBD4900E70748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E4888672BCEBD4900E70748 /* Mafia43.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mafia43.xcdatamodel; sourceTree = "<group>"; };
+		0E4888692BCEBD4A00E70748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E48886C2BCEBD4A00E70748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E48886E2BCEBD4A00E70748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E4888732BCEBD4B00E70748 /* Mafia43Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mafia43Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4888772BCEBD4B00E70748 /* Mafia43Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mafia43Tests.swift; sourceTree = "<group>"; };
+		0E48887D2BCEBD4B00E70748 /* Mafia43UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mafia43UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4888812BCEBD4B00E70748 /* Mafia43UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mafia43UITests.swift; sourceTree = "<group>"; };
+		0E4888832BCEBD4B00E70748 /* Mafia43UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mafia43UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E4888982BCEC56400E70748 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		0E4888AC2BCEF7F200E70748 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		0E4888AF2BCEF81800E70748 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		0E4888B22BCEF82F00E70748 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		0E4888B52BCEF84100E70748 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		0E4888B72BCEF84B00E70748 /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
+		0E4888BA2BCEF8A800E70748 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		0E4888BC2BCEF8B300E70748 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
+		0E4888BE2BCEF8C000E70748 /* YourMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourMessageTableViewCell.swift; sourceTree = "<group>"; };
+		0E4888D02BCF901A00E70748 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		0E4888D22BCFD5EE00E70748 /* ChatFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFooterView.swift; sourceTree = "<group>"; };
+		0E4888DD2BCFE4D200E70748 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		0E7E4C262BD5F41700FAC73C /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E4888572BCEBD4900E70748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4888972BCEC4E000E70748 /* SocketIO in Frameworks */,
+				0E4888C42BCEFE2900E70748 /* IQKeyboardManagerSwift in Frameworks */,
+				0E4888A22BCEF33700E70748 /* SnapKit in Frameworks */,
+				0E48889F2BCEF32200E70748 /* Then in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4888702BCEBD4B00E70748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E48887A2BCEBD4B00E70748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E1F726F2BD364FF008BA3A7 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888DD2BCFE4D200E70748 /* SelectViewController.swift */,
+				0E1F72702BD36525008BA3A7 /* SelectCollectioniViewCell.swift */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
+		0E1F72752BD36C09008BA3A7 /* MessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888BC2BCEF8B300E70748 /* MyMessageTableViewCell.swift */,
+				0E4888D02BCF901A00E70748 /* EventTableViewCell.swift */,
+				0E4888BE2BCEF8C000E70748 /* YourMessageTableViewCell.swift */,
+			);
+			path = MessageCell;
+			sourceTree = "<group>";
+		};
+		0E1F72782BD36D6A008BA3A7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888982BCEC56400E70748 /* SocketIOManager.swift */,
+				0E4888AC2BCEF7F200E70748 /* DateManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0E4888512BCEBD4900E70748 = {
+			isa = PBXGroup;
+			children = (
+				0E48885C2BCEBD4900E70748 /* Mafia43 */,
+				0E4888762BCEBD4B00E70748 /* Mafia43Tests */,
+				0E4888802BCEBD4B00E70748 /* Mafia43UITests */,
+				0E48885B2BCEBD4900E70748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E48885B2BCEBD4900E70748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E48885A2BCEBD4900E70748 /* Mafia43.app */,
+				0E4888732BCEBD4B00E70748 /* Mafia43Tests.xctest */,
+				0E48887D2BCEBD4B00E70748 /* Mafia43UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E48885C2BCEBD4900E70748 /* Mafia43 */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888B92BCEF89700E70748 /* Chat */,
+				0E4888B42BCEF83A00E70748 /* Protocol */,
+				0E4888B12BCEF82900E70748 /* Extension */,
+				0E4888AE2BCEF7FF00E70748 /* Model */,
+				0E4888AB2BCEF7E800E70748 /* Util */,
+				0E48885D2BCEBD4900E70748 /* AppDelegate.swift */,
+				0E48885F2BCEBD4900E70748 /* SceneDelegate.swift */,
+				0E4888632BCEBD4900E70748 /* Main.storyboard */,
+				0E4888692BCEBD4A00E70748 /* Assets.xcassets */,
+				0E48886B2BCEBD4A00E70748 /* LaunchScreen.storyboard */,
+				0E48886E2BCEBD4A00E70748 /* Info.plist */,
+				0E4888662BCEBD4900E70748 /* Mafia43.xcdatamodeld */,
+			);
+			path = Mafia43;
+			sourceTree = "<group>";
+		};
+		0E4888762BCEBD4B00E70748 /* Mafia43Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888772BCEBD4B00E70748 /* Mafia43Tests.swift */,
+			);
+			path = Mafia43Tests;
+			sourceTree = "<group>";
+		};
+		0E4888802BCEBD4B00E70748 /* Mafia43UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888812BCEBD4B00E70748 /* Mafia43UITests.swift */,
+				0E4888832BCEBD4B00E70748 /* Mafia43UITestsLaunchTests.swift */,
+			);
+			path = Mafia43UITests;
+			sourceTree = "<group>";
+		};
+		0E4888AB2BCEF7E800E70748 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F72782BD36D6A008BA3A7 /* Manager */,
+				0E1F72722BD365D9008BA3A7 /* UIViewController+Util.swift */,
+				0E1F72762BD36D2F008BA3A7 /* UITextField+Padding.swift */,
+				0E7E4C262BD5F41700FAC73C /* BaseURL.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0E4888AE2BCEF7FF00E70748 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888AF2BCEF81800E70748 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E4888B12BCEF82900E70748 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888B22BCEF82F00E70748 /* UITableViewCell+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0E4888B42BCEF83A00E70748 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0E4888B52BCEF84100E70748 /* ReusableView.swift */,
+				0E4888B72BCEF84B00E70748 /* ViewRepresentable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0E4888B92BCEF89700E70748 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F72752BD36C09008BA3A7 /* MessageCell */,
+				0E4888D22BCFD5EE00E70748 /* ChatFooterView.swift */,
+				0E4888BA2BCEF8A800E70748 /* ChatView.swift */,
+				0E1F726F2BD364FF008BA3A7 /* Select */,
+				0E4888612BCEBD4900E70748 /* MafiaViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E4888592BCEBD4900E70748 /* Mafia43 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4888872BCEBD4B00E70748 /* Build configuration list for PBXNativeTarget "Mafia43" */;
+			buildPhases = (
+				0E4888562BCEBD4900E70748 /* Sources */,
+				0E4888572BCEBD4900E70748 /* Frameworks */,
+				0E4888582BCEBD4900E70748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mafia43;
+			packageProductDependencies = (
+				0E4888962BCEC4E000E70748 /* SocketIO */,
+				0E48889E2BCEF32200E70748 /* Then */,
+				0E4888A12BCEF33700E70748 /* SnapKit */,
+				0E4888C32BCEFE2900E70748 /* IQKeyboardManagerSwift */,
+			);
+			productName = Mafia43;
+			productReference = 0E48885A2BCEBD4900E70748 /* Mafia43.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E4888722BCEBD4B00E70748 /* Mafia43Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E48888A2BCEBD4B00E70748 /* Build configuration list for PBXNativeTarget "Mafia43Tests" */;
+			buildPhases = (
+				0E48886F2BCEBD4B00E70748 /* Sources */,
+				0E4888702BCEBD4B00E70748 /* Frameworks */,
+				0E4888712BCEBD4B00E70748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E4888752BCEBD4B00E70748 /* PBXTargetDependency */,
+			);
+			name = Mafia43Tests;
+			productName = Mafia43Tests;
+			productReference = 0E4888732BCEBD4B00E70748 /* Mafia43Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E48887C2BCEBD4B00E70748 /* Mafia43UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E48888D2BCEBD4B00E70748 /* Build configuration list for PBXNativeTarget "Mafia43UITests" */;
+			buildPhases = (
+				0E4888792BCEBD4B00E70748 /* Sources */,
+				0E48887A2BCEBD4B00E70748 /* Frameworks */,
+				0E48887B2BCEBD4B00E70748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E48887F2BCEBD4B00E70748 /* PBXTargetDependency */,
+			);
+			name = Mafia43UITests;
+			productName = Mafia43UITests;
+			productReference = 0E48887D2BCEBD4B00E70748 /* Mafia43UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E4888522BCEBD4900E70748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0E4888592BCEBD4900E70748 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					0E4888722BCEBD4B00E70748 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0E4888592BCEBD4900E70748;
+					};
+					0E48887C2BCEBD4B00E70748 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0E4888592BCEBD4900E70748;
+					};
+				};
+			};
+			buildConfigurationList = 0E4888552BCEBD4900E70748 /* Build configuration list for PBXProject "Mafia43" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E4888512BCEBD4900E70748;
+			packageReferences = (
+				0E4888952BCEC4E000E70748 /* XCRemoteSwiftPackageReference "socket" */,
+				0E48889D2BCEF32200E70748 /* XCRemoteSwiftPackageReference "Then" */,
+				0E4888A02BCEF33700E70748 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0E4888C22BCEFE2900E70748 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 0E48885B2BCEBD4900E70748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E4888592BCEBD4900E70748 /* Mafia43 */,
+				0E4888722BCEBD4B00E70748 /* Mafia43Tests */,
+				0E48887C2BCEBD4B00E70748 /* Mafia43UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E4888582BCEBD4900E70748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E48886D2BCEBD4A00E70748 /* LaunchScreen.storyboard in Resources */,
+				0E48886A2BCEBD4A00E70748 /* Assets.xcassets in Resources */,
+				0E4888652BCEBD4900E70748 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4888712BCEBD4B00E70748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E48887B2BCEBD4B00E70748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E4888562BCEBD4900E70748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4888B62BCEF84100E70748 /* ReusableView.swift in Sources */,
+				0E1F72712BD36525008BA3A7 /* SelectCollectioniViewCell.swift in Sources */,
+				0E7E4C272BD5F41700FAC73C /* BaseURL.swift in Sources */,
+				0E4888992BCEC56400E70748 /* SocketIOManager.swift in Sources */,
+				0E4888AD2BCEF7F200E70748 /* DateManager.swift in Sources */,
+				0E4888B02BCEF81800E70748 /* Chat.swift in Sources */,
+				0E1F72732BD365D9008BA3A7 /* UIViewController+Util.swift in Sources */,
+				0E4888BB2BCEF8A800E70748 /* ChatView.swift in Sources */,
+				0E4888B32BCEF82F00E70748 /* UITableViewCell+Extension.swift in Sources */,
+				0E4888622BCEBD4900E70748 /* MafiaViewController.swift in Sources */,
+				0E4888682BCEBD4900E70748 /* Mafia43.xcdatamodeld in Sources */,
+				0E48885E2BCEBD4900E70748 /* AppDelegate.swift in Sources */,
+				0E4888D12BCF901A00E70748 /* EventTableViewCell.swift in Sources */,
+				0E4888BD2BCEF8B300E70748 /* MyMessageTableViewCell.swift in Sources */,
+				0E1F72772BD36D2F008BA3A7 /* UITextField+Padding.swift in Sources */,
+				0E4888602BCEBD4900E70748 /* SceneDelegate.swift in Sources */,
+				0E4888B82BCEF84B00E70748 /* ViewRepresentable.swift in Sources */,
+				0E4888DE2BCFE4D200E70748 /* SelectViewController.swift in Sources */,
+				0E4888D32BCFD5EE00E70748 /* ChatFooterView.swift in Sources */,
+				0E4888BF2BCEF8C000E70748 /* YourMessageTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E48886F2BCEBD4B00E70748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4888782BCEBD4B00E70748 /* Mafia43Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4888792BCEBD4B00E70748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4888842BCEBD4B00E70748 /* Mafia43UITestsLaunchTests.swift in Sources */,
+				0E4888822BCEBD4B00E70748 /* Mafia43UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E4888752BCEBD4B00E70748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E4888592BCEBD4900E70748 /* Mafia43 */;
+			targetProxy = 0E4888742BCEBD4B00E70748 /* PBXContainerItemProxy */;
+		};
+		0E48887F2BCEBD4B00E70748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E4888592BCEBD4900E70748 /* Mafia43 */;
+			targetProxy = 0E48887E2BCEBD4B00E70748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E4888632BCEBD4900E70748 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E4888642BCEBD4900E70748 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E48886B2BCEBD4A00E70748 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E48886C2BCEBD4A00E70748 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E4888852BCEBD4B00E70748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E4888862BCEBD4B00E70748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E4888882BCEBD4B00E70748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mafia43/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jjunhaa0211.Mafia43;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E4888892BCEBD4B00E70748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mafia43/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jjunhaa0211.Mafia43;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0E48888B2BCEBD4B00E70748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jjunhaa0211.Mafia43Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mafia43.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mafia43";
+			};
+			name = Debug;
+		};
+		0E48888C2BCEBD4B00E70748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jjunhaa0211.Mafia43Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mafia43.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mafia43";
+			};
+			name = Release;
+		};
+		0E48888E2BCEBD4B00E70748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jjunhaa0211.Mafia43UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mafia43;
+			};
+			name = Debug;
+		};
+		0E48888F2BCEBD4B00E70748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jjunhaa0211.Mafia43UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mafia43;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E4888552BCEBD4900E70748 /* Build configuration list for PBXProject "Mafia43" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4888852BCEBD4B00E70748 /* Debug */,
+				0E4888862BCEBD4B00E70748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E4888872BCEBD4B00E70748 /* Build configuration list for PBXNativeTarget "Mafia43" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4888882BCEBD4B00E70748 /* Debug */,
+				0E4888892BCEBD4B00E70748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E48888A2BCEBD4B00E70748 /* Build configuration list for PBXNativeTarget "Mafia43Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E48888B2BCEBD4B00E70748 /* Debug */,
+				0E48888C2BCEBD4B00E70748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E48888D2BCEBD4B00E70748 /* Build configuration list for PBXNativeTarget "Mafia43UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E48888E2BCEBD4B00E70748 /* Debug */,
+				0E48888F2BCEBD4B00E70748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E4888952BCEC4E000E70748 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0E48889D2BCEF32200E70748 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		0E4888A02BCEF33700E70748 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		0E4888C22BCEFE2900E70748 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E4888962BCEC4E000E70748 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4888952BCEC4E000E70748 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+		0E48889E2BCEF32200E70748 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E48889D2BCEF32200E70748 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		0E4888A12BCEF33700E70748 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4888A02BCEF33700E70748 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		0E4888C32BCEFE2900E70748 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4888C22BCEFE2900E70748 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0E4888662BCEBD4900E70748 /* Mafia43.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0E4888672BCEBD4900E70748 /* Mafia43.xcdatamodel */,
+			);
+			currentVersion = 0E4888672BCEBD4900E70748 /* Mafia43.xcdatamodel */;
+			path = Mafia43.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0E4888522BCEBD4900E70748 /* Project object */;
+}

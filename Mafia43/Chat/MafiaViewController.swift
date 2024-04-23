@@ -24,9 +24,7 @@ class MafiaViewController: UIViewController {
     func navBarConfig() {
         self.title = "마피아43"
         self.navigationController?.navigationBar.backgroundColor = .black
-        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "시작", style: .done, target: self, action: #selector(readyButtonTap)), UIBarButtonItem(title: "투표", style: .done, target: self, action: #selector(voteButtonTap)), UIBarButtonItem(title: "스킬", style: .done, target: self, action: #selector(voteButtonTap))]
-        
-        self.navigationItem.leftBarButtonItems = [UIBarButtonItem(title: "시간 단축", style: .done, target: self, action: #selector(timeUp)), UIBarButtonItem(title: "시간 단축", style: .done, target: self, action: #selector(timeDown))]
+        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "시작", style: .done, target: self, action: #selector(readyButtonTap)), UIBarButtonItem(title: "투표", style: .done, target: self, action: #selector(voteButtonTap)), UIBarButtonItem(title: "스킬", style: .done, target: self, action: #selector(skillButtonTap))]
     }
     
     override func loadView() {
@@ -163,6 +161,14 @@ class MafiaViewController: UIViewController {
     
     @objc func voteButtonTap() {
         let controller = UsersViewController()
+        controller.title = "투표"
+        controller.initializer(socketIOManager)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc func skillButtonTap() {
+        let controller = UsersViewController()
+        controller.title = "스킬"
         controller.initializer(socketIOManager)
         self.navigationController?.pushViewController(controller, animated: true)
     }
@@ -214,8 +220,8 @@ extension MafiaViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let chat = list[indexPath.row]
-        if chat.text.contains("수고") {
-            let alertController = UIAlertController(title: "알림", message: "\"수고\"가 포함된 메시지입니다.", preferredStyle: .alert)
+        if chat.text.contains("잠수") {
+            let alertController = UIAlertController(title: "잠수", message: "게임 내내 아무 말과 행동도 하지 않고 있는 것, 또는 그 사람을 지칭하는 말.", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "확인", style: .default))
             present(alertController, animated: true)
         }

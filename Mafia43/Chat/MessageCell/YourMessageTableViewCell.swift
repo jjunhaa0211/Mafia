@@ -49,8 +49,8 @@ class YourMessageTableViewCell: UITableViewCell, ViewRepresentable {
         let text = chat.text
         let attributedString = NSMutableAttributedString(string: text)
 
-        // "수고" 문자열이 포함된 범위를 찾아 밑줄 추가
-        if let range = text.range(of: "수고") {
+        // "잠수" 문자열이 포함된 범위를 찾아 밑줄 추가
+        if let range = text.range(of: "잠수") {
             let nsRange = NSRange(range, in: text)
             attributedString.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: nsRange)
         }

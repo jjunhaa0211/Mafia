@@ -51,7 +51,7 @@ class EventTableViewCell: UITableViewCell, ViewRepresentable {
         let text = chat.text
         let attributedString = NSMutableAttributedString(string: text)
 
-        if let range = text.range(of: "수고") {
+        if let range = text.range(of: "잠수") {
             let nsRange = NSRange(range, in: text)
             attributedString.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: nsRange)
         }
